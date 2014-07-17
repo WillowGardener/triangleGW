@@ -8,4 +8,7 @@ describe("triangle", function() {
   it("should interpret three unequivalent integers as a scalene triangle", function() {
     triangle(7,6,5).should.equal("scalene");
   });
+  it("should check to make sure the input integers form a triangle", function() {
+    triangle(7,6,30000).should.equal("that's not geometrically possible, dummy. Seriously, try drawing it.");
+  });
 });

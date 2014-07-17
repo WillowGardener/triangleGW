@@ -3,13 +3,17 @@
 //isosceles, or scalene
 var triangle = function(a,b,c) {
   var triangleType = ""
+  //makes sure the integers entered form a triangle, and if they don't, insults your intelligence
+    if (a > b + c || b > a + c || c > a + b) {
+    triangleType = "that's not geometrically possible, dummy. Seriously, try drawing it.";
   //this if statement checks to see if all three inputs are equal
-  if (a === b && a === c) {
+  } else if (a === b && a === c) {
     triangleType = "equilateral";
   //if the program determines that the triangle is not equilateral,
   //this else if statement checks to see if two sides are equal to each other
   } else if (a === b || a === c || b === c) {
     triangleType = "isosceles";
+  //if none of the above conditions are  true, the triangle is scalene
   } else {
     triangleType = "scalene";
   };
