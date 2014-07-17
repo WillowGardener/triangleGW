@@ -10,6 +10,8 @@ var triangle = function(a,b,c) {
   //this else if statement checks to see if two sides are equal to each other
   } else if (a === b || a === c || b === c) {
     triangleType = "isosceles";
+  } else {
+    triangleType = "scalene";
   };
   return triangleType;
   };
