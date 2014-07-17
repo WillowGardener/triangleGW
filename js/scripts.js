@@ -5,7 +5,11 @@ var triangle = function(a,b,c) {
   var triangleType = ""
   //this if statement checks to see if all three inputs are equal
   if (a === b && a === c) {
-    triangleType = "equilateral"
+    triangleType = "equilateral";
+  //if the program determines that the triangle is not equilateral,
+  //this else if statement checks to see if two sides are equal to each other
+  } else if (a === b || a === c || b === c) {
+    triangleType = "isosceles";
+  };
   return triangleType;
   };
-};
