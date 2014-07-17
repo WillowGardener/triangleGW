@@ -8,14 +8,14 @@ var triangle = function(a,b,c) {
     triangleType = "that's not geometrically possible, dummy. Seriously, try drawing it.";
   //this if statement checks to see if all three inputs are equal
   } else if (a === b && a === c) {
-    triangleType = "equilateral";
+    triangleType = "Your triangle is... equilateral!";
   //if the program determines that the triangle is not equilateral,
   //this else if statement checks to see if two sides are equal to each other
   } else if (a === b || a === c || b === c) {
-    triangleType = "isosceles";
+    triangleType = "Your triangle is... isosceles!";
   //if none of the above conditions are  true, the triangle is scalene
   } else {
-    triangleType = "scalene";
+    triangleType = "Your triangle is... scalene!";
   };
   return triangleType;
   };
