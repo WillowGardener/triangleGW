@@ -9,6 +9,10 @@ describe("triangle", function() {
     triangle(7,6,5).should.equal("Your triangle is... scalene!");
   });
   it("should check to make sure the input integers form a triangle", function() {
-    triangle(7,6,30000).should.equal("that's not geometrically possible, dummy. Seriously, try drawing it.");
+    triangle(50,50,101).should.equal("that's not geometrically possible, dummy. Seriously, try drawing it.");
   });
+  it("should evaluate an impossible scalene triangle", function() {
+    triangle(3,4,20).should.equal("that's not geometrically possible, dummy. Seriously, try drawing it.");
+  });
+
 });
